@@ -1,0 +1,62 @@
+.content-pane {
+    -fx-background-color: rgb(29,32,49);
+    -fx-border-width: 0 0 0 0;
+    -fx-border-color: rgb(54, 59, 79);
+}
+
+.btn-calc {
+    -fx-background-color: rgb(29,32,49);
+    -fx-background-radius: 0px;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Exo', sans-serif;
+    -fx-border-radius: 0px;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: rgb(54, 59, 79);
+    -fx-text-alignment: left;
+    -fx-text-fill: rgb(200, 200, 200);
+    -fx-cursor: hand;
+    -fx-display: inline-block;
+}
+
+.btn-calc:hover {
+    -fx-border-color: transparent transparent rgb(44, 171, 64) transparent;
+}
+
+.btn-browse {
+    -fx-background-color: rgb(29,32,49);
+    -fx-background-radius: 0px;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Exo', sans-serif;
+    -fx-border-radius: 0px;
+    -fx-border-width: 0 0 0 0;
+    -fx-border-color: rgb(54, 59, 79);
+    -fx-text-alignment: left;
+    -fx-text-fill: rgb(200, 200, 200);
+    -fx-display: inline-block;
+}
+
+.btn-browse:hover {
+    -fx-text-fill: rgb(44, 171, 64);
+}
+
+
+.text-field {
+    -fx-background-color: rgb(29, 32, 49);
+    -fx-border-color: transparent transparent transparent transparent;
+    -fx-border-width: 1px;
+    -fx-text-fill: rgb(200, 200, 200);
+    -fx-font-family: 'Exo', sans-serif;
+    -fx-prompt-text-fill: rgb(100, 100, 100);
+    -jfx-focus-color: rgb(242, 109, 1);
+    -jfx-label-float: true;
+    -jfx-disable-animation: false;
+}
+
+.lbl-valid {
+    -fx-text-fill: rgb(242, 109, 1);
+    -fx-font-weight: bold;
+    -fx-font-family: 'Exo', sans-serif;
+    visibility: hidden;
+}
