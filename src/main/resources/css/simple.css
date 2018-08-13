@@ -44,14 +44,18 @@
 
 .text-field {
     -fx-background-color: rgb(29, 32, 49);
-    -fx-border-color: transparent transparent transparent transparent;
-    -fx-border-width: 1px;
+    -fx-border-color: transparent transparent rgb(54, 59, 79) transparent;
     -fx-text-fill: rgb(200, 200, 200);
     -fx-font-family: 'Exo', sans-serif;
+    -fx-font-size: 14;
     -fx-prompt-text-fill: rgb(100, 100, 100);
-    -jfx-focus-color: rgb(242, 109, 1);
-    -jfx-label-float: true;
-    -jfx-disable-animation: false;
+    -fx-border-width: 0 0 1 0;
+    -fx-opacity: 0.8;
+}
+
+.text-field:focused {
+    -fx-border-color: transparent transparent rgb(242, 109, 1) transparent;
+    -fx-opacity: 1;
 }
 
 .lbl-valid {

@@ -1,9 +1,9 @@
 package controllers;
 
-import com.jfoenix.controls.JFXTextField;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.stage.FileChooser;
 import utils.Parser;
 import utils.Validator;
@@ -24,7 +24,7 @@ public class Menu {
 
     @FXML private Button calculate, show;
     @FXML private Button browse;
-    @FXML private JFXTextField selected, solved;
+    @FXML private TextField selected, solved;
     @FXML private Label valid;
 
     @FXML
@@ -34,7 +34,7 @@ public class Menu {
         fileChooser.getExtensionFilters().add(extFilter);
         fileChooser.setTitle("Select xml file");
         fileChooser.setInitialDirectory(new File(System.getProperty("user.dir") + Parser.location));
-        selected.setFocusTraversable(true);
+        //selected.setFocusTraversable(true);
         show.setDisable(true);
         valid = new Label("");
     }
@@ -97,8 +97,8 @@ public class Menu {
 
         browse.setOnAction(action -> {
 
-            selected.clear();
-            solved.clear();
+            selected.setText("");
+            solved.setText("");
             show.setDisable(true);
 
             in = fileChooser.showOpenDialog(calculate.getScene().getWindow());
