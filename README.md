@@ -2,7 +2,7 @@
 
 - run: mvn clean package
 
-#How it works
+# How it works
 
 - Click -Browse- and choose xml file against Calculator.xsd schema
 - Click -Calc-
