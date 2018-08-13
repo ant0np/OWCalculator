@@ -5,5 +5,5 @@
 #How it works
 
 - Click -Browse- and choose xml file against Calculator.xsd schema
-- Click calc
-- Click show to manage the result
+- Click -Calc-
+- Click -Show- to manage the result
